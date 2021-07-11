@@ -80,7 +80,7 @@ def GenerateSign(string, secret, read_key=None, write_key=None, delete_key=None,
     return (encoded_signature, concat,readtime,hashingtime)
 
 
-@app.route('/', methods=['GET','POST'])
+@app.route('/demo', methods=['GET','POST'])
 def index():
     if request.method == 'POST':
         text = request.form['data']
